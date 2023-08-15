@@ -1,21 +1,25 @@
 <header class="header-global">
 
+    {% assign menu = page.menu %}
 
-    {% if page.url != "/" %}
+    {% if menu == "dark" %}
     <nav id="navbar-main"
-        class="navbar navbar-main navbar-expand-lg headroom py-lg-3 px-lg-6 navbar-light navbar-theme-primary headroom--not-bottom headroom--pinned headroom--top">
+        class="navbar navbar-main navbar-expand-lg headroom py-lg-3 px-lg-6 navbar-dark navbar-theme-primary headroom--not-bottom headroom--pinned headroom--top">
         {% endif %}
 
-        {% if page.url == "/" %}
+        {% if menu == "light" %}
         <nav id="navbar-main"
-            class="navbar navbar-main navbar-expand-lg headroom py-lg-3 px-lg-6 navbar-dark navbar-theme-primary headroom--not-bottom headroom--pinned headroom--top">
+            class="navbar navbar-main navbar-expand-lg headroom py-lg-3 px-lg-6 navbar-light navbar-theme-primary headroom--not-bottom headroom--pinned headroom--top">
             {% endif %}
 
+
+
             <div class="container">
-                {% if page.url != "/" %}
+                {% if menu == "light" %}
                 <a class="navbar-brand @@logo_classes" href="/"><img class="navbar-brand-dark common"
-                        src="{{ site.baseurl }}/assets/images/hybrid-cctv-logo.svg" width="200" height="35" alt="Logo light"> <img
-                        class="navbar-brand-light common" src="{{ site.baseurl }}/assets/images/hybrid-cctv-logo-dark.svg" width="200" height="35"
+                        src="{{ site.baseurl }}/assets/images/hybrid-cctv-logo.svg" width="200" height="35"
+                        alt="Logo light"> <img class="navbar-brand-light common"
+                        src="{{ site.baseurl }}/assets/images/hybrid-cctv-logo-dark.svg" width="200" height="35"
                         alt="Logo dark"></a>
                 {% endif %}
 
@@ -34,13 +38,15 @@
                     <ul class="navbar-nav navbar-nav-hover justify-content-center">
 
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-toggle="dropdown" aria-controls="pages_submenu" aria-expanded="false" aria-label="Toggle pages menu item">
+                            <a href="#" class="nav-link" data-toggle="dropdown" aria-controls="pages_submenu"
+                                aria-expanded="false" aria-label="Toggle pages menu item">
                                 <span class="nav-link-inner-text">CCTV Pricing</span>
                                 <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
                             </a>
                             <ul class="dropdown-menu" id="pages_submenu">
                                 {% for price_item in site.data.menus.topmenu.pricing %}
-                                <li><a class="dropdown-item" href="{{price_item.url | relative_url}}" alt="{{price_item.title}}">{{price_item.title}}</a></li>
+                                <li><a class="dropdown-item" href="{{price_item.url | relative_url}}"
+                                        alt="{{price_item.title}}">{{price_item.title}}</a></li>
                                 {% endfor %}
                             </ul>
                         </li>
@@ -54,7 +60,7 @@
                         Get Quote
                     </a>
                     <a href="tel:=+94769026918" target="_blank" class="btn btn-md btn-secondary animate-up-2">
-                        <i class="fas fa-phone-alt mr-2"></i> 
+                        <i class="fas fa-phone-alt mr-2"></i>
                         +94 76 9026918
                     </a>
                 </div>

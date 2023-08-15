@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="google-site-verification" content="246QM4Xki0jvdh3ANoDKXe-UOPQ23He8W83KY4P5ttA" />
+<meta name="description" content="CCTV Surveillance Systems Based on Galle Sri Lanka, Hikvision, Dahua">
+
+<link rel="canonical" href="{{ page.redirect_to }}"/>
+<meta http-equiv="refresh" content="0;url={{ page.redirect_to }}" />
+
+<link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/assets/images/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/images/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/images/fav/favicon-16x16.png">
+<link rel="manifest" href="{{ site.baseurl }}/assets/images/fav/site.webmanifest">
+<link rel="mask-icon" href="{{ site.baseurl }}/assets/images/fav/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+{% if page.url == "/" %}
+      <title>{{ page.title }}</title> 
+{% endif %}
+
+
+{% seo %}
+
+<!-- Nucleo icons -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/nucleo.css" type="text/css">
+<!-- Prism -->
+<link type="text/css" href="{{ site.baseurl }}/assets/css/prism.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/front.css" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/noto.css" type="text/css">
+
+
+{% if jekyll.environment == "production" %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{site.ganalytics}}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '{{site.ganalytics}}');
+</script>
+<!-- Clarity tracking code for https://uslayer.com/ --><script>    (function(c,l,a,r,i,t,y){        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);    })(window, document, "clarity", "script", "ejdzgl0xtg");</script>
+{% endif %}
+</head>
+
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<body>
+
+<!-- Menu Navigation
+================================================== -->
+{% include nav.html %}
+
+
+<!-- Container
+================================================== -->
+<main>
+    <h1>Redirecting...</h1>
+    <a href="{{ page.redirect_to }}">Click here if you are not redirected.<a>
+    <script>location='{{ page.redirect_to }}'</script>
+</main>
+
+<!-- Footer
+================================================== -->
+{% include footer.html %}
+
+</body>
+
+</html>
