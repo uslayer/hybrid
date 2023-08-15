@@ -1,4 +1,5 @@
 title: "Hybrid CCTV Galle"
+tagline: "Top CCTV provider in Galle, Hikvision, Dahua, CCTV shop"
 email: contact@uslayer.com
 formspree: xqknzwyk
 timezone: UTC
@@ -6,7 +7,7 @@ baseurl: ""
 permalink: "/:title/"
 logo: 'assets/images/hybrid-cctv-logo.svg'
 favicon: 'assets/images/fav.svg'
-author: Admin
+author: Hybrid CCTV Galle
 paginate: 30
 disqus: 'us-layer'
 locale: en_us
