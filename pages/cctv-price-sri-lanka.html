@@ -11,12 +11,16 @@ permalink: "/cctv-price-sri-lanka"
                 <h1 class="h1 px-lg-5">Popular CCTV Camera Prices in Sri Lanka</h1>
                 <p class="lead px-lg-11">To get the fixed price of the camera, press the <span class="text-success">"Ask
                         for price"</span> button under that camera description.</p>
-                <p class="lead px-lg-11">ඒ ඒ කැමරාවට අදාළ මිලගණන් දැනගැනීම සඳහා ඒ ඒ කැමරාව යටතේ ඇති <span
-                        class="text-success">"Ask for price"</span> බොත්තම ඔබන්න.</p>
+                <p class="lead px-lg-11">
+                    <span class="noto-font">ඒ ඒ කැමරාවට අදාළ මිලගණන් දැනගැනීම සඳහා ඒ ඒ කැමරාව යටතේ ඇති</span> 
+                    <span class="text-success">"Ask for price"</span>
+                    <span class="noto-font">බොත්තම ඔබන්න.</span></p>
             </div>
         </div>
 
         {% include business_status.html %}
+
+        {% assign pricing = site.data.camera_pricing %}
 
         <div id="DS-2CE16D0T-ITPF" class="row row-grid align-items-center card shadow-soft border-light p-5" style="flex-direction: row;">
             <div class="col-12 col-md-6 order-md-2">
@@ -28,7 +32,7 @@ permalink: "/cctv-price-sri-lanka"
                 <li>Smart IR, up to 25 m IR distance</li>
                 <li>Water and dust resistant (IP67)</li>
 
-                <h3 class="pt-3"><span class="text-secondary">Rs.6,500.00 - Rs.7,500.00</span></h3>
+                <h3 class="pt-3"><span class="text-secondary">Rs.{{ pricing.DS-2CE16D0T-ITPF.start_price }} - Rs.{{ pricing.DS-2CE16D0T-ITPF.end_price }}</span></h3>
                 <a href="https://wa.me/+94769026918?text=Hi Hybrid CCTV, Hikvision DS-2CE16D0T-ITPF price?"
                     target="_blank" class="btn btn-md btn-success mt-3 animate-up-2">Ask for price <i
                         class="fab fa-whatsapp ml-2"></i></a>
@@ -53,7 +57,7 @@ permalink: "/cctv-price-sri-lanka"
                 <li>Water and dust resistant (IP67)</li>
 
 
-                <h3 class="pt-3"><span class="text-secondary">Rs.11,500.00 - Rs.13,500.00</span></h3>
+                <h3 class="pt-3"><span class="text-secondary">Rs.{{ pricing.DS-2CE10DF3T-PF.start_price }} - Rs.{{ pricing.DS-2CE10DF3T-PF.end_price }}</span></h3>
                 <a href="https://wa.me/+94769026918?text=Hi Hybrid CCTV, Hikvision DS-2CE10DF3T-PF price?"
                     target="_blank" class="btn btn-md btn-success mt-3 animate-up-2">Ask for price <i
                         class="fab fa-whatsapp ml-2"></i></a>
@@ -81,7 +85,7 @@ permalink: "/cctv-price-sri-lanka"
                 <li>Water and dust resistant (IP67)</li>
 
 
-                <h3 class="pt-3"><span class="text-secondary">Rs.13,350.00 - Rs.16,650.00</span></h3>
+                <h3 class="pt-3"><span class="text-secondary">Rs.{{ pricing.DS-2CE12DF3T-F.start_price }} - Rs.{{ pricing.DS-2CE12DF3T-F.end_price }}</span></h3>
                 <a href="https://wa.me/+94769026918?text=Hi Hybrid CCTV, Hikvision DS-2CE12DF3T-F price?"
                     target="_blank" class="btn btn-md btn-success mt-3 animate-up-2">Ask for price <i
                         class="fab fa-whatsapp ml-2"></i></a> 
@@ -105,7 +109,7 @@ permalink: "/cctv-price-sri-lanka"
                 <li>High quality audio with audio over coaxial cable, built-in mic</li>
                 <li>Water and dust resistant (IP67)</li>
 
-                <h3 class="pt-3"><span class="text-secondary">Rs.6,500.00 - Rs.7,500.00</span></h3>
+                <h3 class="pt-3"><span class="text-secondary">Rs.{{ pricing.DS-2CE16D0T-LPFS.start_price }} - Rs.{{ pricing.DS-2CE16D0T-LPFS.end_price }}</span></h3>
                 <a href="https://wa.me/+94769026918?text=Hi Hybrid CCTV, Hikvision DS-2CE16D0T-LPFS price?"
                     target="_blank" class="btn btn-md btn-success mt-3 animate-up-2">Ask for price <i
                         class="fab fa-whatsapp ml-2"></i></a>

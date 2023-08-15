@@ -1,17 +1,18 @@
 # Top Menu
 topmenu:
 
-- title: Home
-  url: "/"
+  pricing:
+  - title: CCTV Camera
+    url: "/cctv-price-sri-lanka"
 
-- title: Services
-  url: "/services/"
+  - title: DVR
+    url: "#"
 
-- title: About
-  url: "/about/"
+  - title: Hard Disks
+    url: "#"
 
-- title: Contact
-  url: "/contact/"
+  - title: CCTV Equipments
+    url: "#"
 
 
 

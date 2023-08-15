@@ -1,0 +1,15 @@
+DS-2CE16D0T-ITPF:
+  start_price: 6,500.00
+  end_price: 7,500.00
+
+DS-2CE10DF3T-PF:
+  start_price: 11,500.00
+  end_price: 13,500.00
+
+DS-2CE12DF3T-F:
+  start_price: 13,350.00
+  end_price: 16,650.00
+
+DS-2CE16D0T-LPFS:
+  start_price: 6,500.00
+  end_price: 7,500.00

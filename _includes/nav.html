@@ -39,10 +39,9 @@
                                 <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
                             </a>
                             <ul class="dropdown-menu" id="pages_submenu">
-                                <li><a class="dropdown-item" href="/cctv-price-sri-lanka">CCTV Camera</a></li>
-                                <li><a class="dropdown-item" href="#">DVR</a></li>
-                                <li><a class="dropdown-item" href="#">Hard Disk</a></li>
-                                <li><a class="dropdown-item" href="#">CCTV equipments</a></li>
+                                {% for price_item in site.data.menus.topmenu.pricing %}
+                                <li><a class="dropdown-item" href="{{price_item.url | relative_url}}" alt="{{price_item.title}}">{{price_item.title}}</a></li>
+                                {% endfor %}
                             </ul>
                         </li>
 
