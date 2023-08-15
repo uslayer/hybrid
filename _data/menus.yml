@@ -3,7 +3,7 @@ topmenu:
 
   pricing:
   - title: CCTV Camera
-    url: "/cctv-price-sri-lanka"
+    url: "cctv/camera-price"
 
   - title: DVR
     url: "#"
