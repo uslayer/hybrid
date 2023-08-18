@@ -5,7 +5,7 @@ formspree: xqknzwyk
 timezone: UTC
 baseurl: ""
 permalink: "/:title/"
-logo: 'assets/images/hybrid-cctv-logo.svg'
+logo: 'assets/images/hybrid_cctv_google_camera.jpg'
 favicon: 'assets/images/fav.svg'
 author: Hybrid CCTV Galle
 paginate: 30
