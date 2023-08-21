@@ -1,18 +1,23 @@
 # Top Menu
 topmenu:
 
-  pricing:
-  - title: CCTV Camera
-    url: "cctv/camera-price"
+- title: Wi-Fi Camera
+  url: "cctv/wifi-camera"
 
-  - title: DVR
-    url: "#"
+# Top Menu pricing
+topmenu_pricing:
 
-  - title: Hard Disks
-    url: "#"
+- title: CCTV Camera
+  url: "cctv/camera-price"
 
-  - title: CCTV Equipments
-    url: "#"
+- title: DVR
+  url: "#"
+
+- title: Hard Disks
+  url: "#"
+
+- title: CCTV Equipments
+  url: "#"
 
 
 

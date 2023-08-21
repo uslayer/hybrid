@@ -37,6 +37,16 @@
                     </div>
                     <ul class="navbar-nav navbar-nav-hover justify-content-center">
 
+
+                        {% for nav_item in site.data.menus.topmenu%}
+                            <li class="nav-item">
+                                <a href="{{nav_item.url | relative_url}}" class="nav-link">{{nav_item.title}}</a>
+                            </li>
+                        {% endfor %}
+
+
+                        
+
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link" data-toggle="dropdown" aria-controls="pages_submenu"
                                 aria-expanded="false" aria-label="Toggle pages menu item">
@@ -44,8 +54,9 @@
                                 <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
                             </a>
                             <ul class="dropdown-menu" id="pages_submenu">
-                                {% for price_item in site.data.menus.topmenu.pricing %}
-                                <li><a class="dropdown-item" href="{{price_item.url | relative_url}}">{{price_item.title}}</a></li>
+                                {% for price_item in site.data.menus.topmenu_pricing %}
+                                <li><a class="dropdown-item"
+                                        href="{{price_item.url | relative_url}}">{{price_item.title}}</a></li>
                                 {% endfor %}
                             </ul>
                         </li>
